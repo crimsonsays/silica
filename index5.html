@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="shortcut icon" href="/favicon/favicon.ico" />
+  
+  <!-- SEO Meta Tags -->
+  <title>Precision Sand – Premium Washed Silica Sand for Foundries & Industries</title>
+  <meta name="description" content="Leading supplier of high-quality washed silica sand for foundries, automotive casting, and industrial applications. Complete AFS range with advanced washing technology." />
+  <link rel="canonical" href="https://precisionsand.com" />
+  <meta name="author" content="Precision Sand" />
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Precision Sand" />
+  <meta property="og:title" content="Precision Sand – Premium Washed Silica Sand for Foundries" />
+  <meta property="og:description" content="Industry-grade silica sand supplier trusted by leading OEMs. Complete AFS range with consistent quality supply." />
+  <meta property="og:url" content="https://precisionsand.com" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Precision Sand – Premium Washed Silica Sand for Foundries" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    /* Custom animations and utilities */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .animate-fade-in-up {
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+
+    .animate-float {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    /* Glassmorphism effect */
+    .glass-card {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }
+
+    .glass-card:hover {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
+      border-color: rgba(56, 189, 248, 0.3);
+      transform: translateY(-5px);
+      transition: all 0.3s ease;
+    }
+
+    /* Gradient text */
+    .gradient-text {
+      background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Process step animation */
+    .process-step {
+      opacity: 0;
+      transform: translateX(-20px);
+      animation: slideIn 0.5s ease forwards;
+    }
+
+    @keyframes slideIn {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    /* Smooth transitions */
+    * {
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Mobile menu slide */
+    .menu-slide {
+      transform: translateX(-100%);
+      transition: transform 300ms ease-in-out;
+    }
+
+    .menu-slide.active {
+      transform: translateX(0);
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #020617;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #38bdf8;
+      border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #0ea5e9;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-black via-slate-950 to-black text-white min-h-screen">
+  
+  <!-- ========== HEADER ========== -->
+  <header class="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-md text-white px-6 md:px-8 py-3 rounded-full shadow-lg flex items-center justify-between gap-6 w-[90%] max-w-6xl border border-white/10">
+    <!-- Logo -->
+    <a href="/" aria-label="Home" class="flex items-center gap-2 font-semibold text-lg">
+      <div class="h-8 w-8 rounded-xl bg-gradient-to-tr from-sky-500 to-blue-600 shadow-lg shadow-sky-500/40 flex items-center justify-center">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+        </svg>
+      </div>
+      <span class="hidden md:block text-lg font-semibold tracking-tight">
+        Precision<span class="gradient-text">Sand</span>
+      </span>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex gap-6 text-sm text-gray-300" aria-label="Primary navigation">
+      <a href="#about" class="hover:text-sky-400 transition">About</a>
+      <a href="#products" class="hover:text-sky-400 transition">Products</a>
+      <a href="#process" class="hover:text-sky-400 transition">Process</a>
+      <a href="#clients" class="hover:text-sky-400 transition">Clients</a>
+      <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
+    </nav>
+
+    <!-- Mobile Menu Toggle -->
+    <button id="menuToggle" class="md:hidden p-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 rounded" aria-label="Open menu" aria-expanded="false">
+      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+
+    <!-- CTA Desktop -->
+    <a href="#contact" class="hidden md:flex items-center gap-2 bg-gradient-to-r from-sky-500 to-blue-600 px-5 py-2.5 rounded-full font-medium hover:shadow-lg hover:shadow-sky-500/50 transition text-sm">
+      Get Quote
+    </a>
+  </header>
+
+  <!-- ========== MOBILE SIDEBAR MENU ========== -->
+  <div id="menuOverlay" class="fixed inset-0 bg-black/70 z-40 hidden backdrop-blur-sm"></div>
+  
+  <aside id="mobileSidebar" class="menu-slide fixed top-0 left-0 h-full w-64 bg-slate-950 z-50 p-6 border-r border-white/10">
+    <div class="flex justify-between items-center mb-8">
+      <div class="flex items-center gap-2">
+        <div class="h-8 w-8 rounded-xl bg-gradient-to-tr from-sky-500 to-blue-600 shadow-lg flex items-center justify-center">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+          </svg>
+        </div>
+        <span class="text-sm font-semibold">Precision<span class="gradient-text">Sand</span></span>
+      </div>
+      <button id="menuClose" class="text-white p-1" aria-label="Close menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="flex flex-col gap-4" aria-label="Mobile navigation">
+      <a href="#about" class="mobile-link text-gray-300 hover:text-sky-400 transition py-2">About Us</a>
+      <a href="#products" class="mobile-link text-gray-300 hover:text-sky-400 transition py-2">Products</a>
+      <a href="#process" class="mobile-link text-gray-300 hover:text-sky-400 transition py-2">Process</a>
+      <a href="#clients" class="mobile-link text-gray-300 hover:text-sky-400 transition py-2">Clients</a>
+      <a href="#faqs" class="mobile-link text-gray-300 hover:text-sky-400 transition py-2">FAQs</a>
+      <a href="#contact" class="mobile-link text-gray-300 hover:text-sky-400 transition py-2">Contact</a>
+      <a href="#contact" class="mt-4 bg-gradient-to-r from-sky-500 to-blue-600 px-5 py-2.5 rounded-full font-medium text-center text-sm hover:shadow-lg transition">
+        Get Quote
+      </a>
+    </nav>
+  </aside>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="pt-32 md:pt-40 px-6 pb-16 overflow-hidden">
+    <div class="max-w-6xl mx-auto">
+      <!-- Main Hero Content -->
+      <div class="text-center mb-16">
+        <div class="inline-flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full text-sm text-gray-300 backdrop-blur-md border border-white/10 mb-6 animate-float">
+          <span class="h-2 w-2 rounded-full bg-green-400 shadow-[0_0_8px_rgba(34,197,94,0.6)]"></span>
+          Industry-Leading Silica Sand Supplier
+        </div>
+
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight mb-6">
+          Precision Sand for
+          <br />
+          <span class="gradient-text">Precision Casting</span>
+        </h1>
+
+        <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-10">
+          High-quality washed silica sand engineered for foundries and industries. Complete AFS range with advanced washing technology, trusted by leading OEMs across India.
+        </p>
+
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="#products" class="bg-gradient-to-r from-sky-500 to-blue-600 px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:shadow-sky-500/50 transition text-base">
+            Our Products
+          </a>
+          <a href="#contact" class="bg-white/5 border border-white/10 px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition text-base backdrop-blur-md">
+            Contact Us
+          </a>
+        </div>
+      </div>
+
+      <!-- Key Highlights Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div class="glass-card rounded-2xl p-6 text-center">
+          <div class="w-14 h-14 bg-gradient-to-br from-sky-500/20 to-blue-600/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Complete AFS Range</h3>
+          <p class="text-sm text-gray-400">Full spectrum of grain sizes for all casting applications</p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6 text-center">
+          <div class="w-14 h-14 bg-gradient-to-br from-sky-500/20 to-blue-600/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Advanced Washing Technology</h3>
+          <p class="text-sm text-gray-400">Multi-stage cleaning for highest purity levels</p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6 text-center">
+          <div class="w-14 h-14 bg-gradient-to-br from-sky-500/20 to-blue-600/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Trusted by Leading OEMs</h3>
+          <p class="text-sm text-gray-400">Preferred supplier for top automotive manufacturers</p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6 text-center">
+          <div class="w-14 h-14 bg-gradient-to-br from-sky-500/20 to-blue-600/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Consistent Quality Supply</h3>
+          <p class="text-sm text-gray-400">Batch-wise testing and certified quality assurance</p>
+        </div>
+      </div>
+
+      <!-- Major Clients Logos -->
+      <div class="glass-card rounded-2xl p-8 text-center">
+        <p class="text-xs uppercase tracking-wider text-gray-400 mb-6">Trusted by Industry Leaders</p>
+        <div class="flex flex-wrap items-center justify-center gap-8">
+          <div class="px-6 py-3 bg-white/5 rounded-lg border border-white/10 text-sm font-medium">Ashok Leyland</div>
+          <div class="px-6 py-3 bg-white/5 rounded-lg border border-white/10 text-sm font-medium">Nelcast Limited</div>
+          <div class="px-6 py-3 bg-white/5 rounded-lg border border-white/10 text-sm font-medium">Brakes India</div>
+          <div class="px-6 py-3 bg-white/5 rounded-lg border border-white/10 text-sm font-medium">Donn Brake</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT US SECTION ========== -->
+  <section id="about" class="py-20 px-6 bg-gradient-to-b from-black to-slate-950">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="text-sky-400 text-sm uppercase tracking-wider font-semibold">About Us</span>
+        <h2 class="text-3xl md:text-5xl font-bold mt-3 mb-4">Company Overview</h2>
+        <p class="text-gray-400 text-lg max-w-3xl mx-auto">
+          Industry-grade silica sand supplier with decades of expertise, trusted by major foundries and OEMs across India.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <div class="glass-card rounded-2xl p-8">
+          <h3 class="text-2xl font-semibold mb-4 gradient-text">Our Mission</h3>
+          <p class="text-gray-300 mb-4">
+            To deliver premium-quality washed silica sand that empowers foundries and industries to achieve excellence in their casting operations. We are committed to maintaining the highest standards of quality, consistency, and customer service.
+          </p>
+          <p class="text-gray-300">
+            With years of focused expertise in the silica sand industry, we have built a reputation for reliability, technical excellence, and long-term partnerships with India's leading manufacturers.
+          </p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-8">
+          <h3 class="text-2xl font-semibold mb-4 gradient-text">Our Commitment</h3>
+          <ul class="space-y-3 text-gray-300">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-sky-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span><strong>Quality First:</strong> Every batch undergoes rigorous lab testing to ensure compliance with foundry standards</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-sky-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span><strong>On-Time Delivery:</strong> Reliable supply chain management for contract-based operations</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-sky-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span><strong>Technical Support:</strong> Expert guidance for sand selection and foundry optimization</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-sky-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span><strong>Sustainable Practices:</strong> Manufacturing ethics that prioritize environmental responsibility</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="glass-card rounded-xl p-6 text-center">
+          <div class="text-3xl md:text-4xl font-bold gradient-text mb-2">20+</div>
+          <div class="text-sm text-gray-400 uppercase tracking-wider">Years Experience</div>
+        </div>
+        <div class="glass-card rounded-xl p-6 text-center">
+          <div class="text-3xl md:text-4xl font-bold gradient-text mb-2">50+</div>
+          <div class="text-sm text-gray-400 uppercase tracking-wider">Major Clients</div>
+        </div>
+        <div class="glass-card rounded-xl p-6 text-center">
+          <div class="text-3xl md:text-4xl font-bold gradient-text mb-2">99%+</div>
+          <div class="text-sm text-gray-400 uppercase tracking-wider">Silica Purity</div>
+        </div>
+        <div class="glass-card rounded-xl p-6 text-center">
+          <div class="text-3xl md:text-4xl font-bold gradient-text mb-2">24/7</div>
+          <div class="text-sm text-gray-400 uppercase tracking-wider">Support Available</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRODUCTS & SERVICES SECTION ========== -->
+  <section id="products" class="py-20 px-6 bg-black">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="text-sky-400 text-sm uppercase tracking-wider font-semibold">Our Products</span>
+        <h2 class="text-3xl md:text-5xl font-bold mt-3 mb-4">Premium Sand Solutions</h2>
+        <p class="text-gray-400 text-lg max-w-3xl mx-auto">
+          Comprehensive range of washed silica sand and custom grades tailored for foundries and industrial applications.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <!-- Washed Silica Sand -->
+        <div class="glass-card rounded-2xl p-8 hover:shadow-2xl hover:shadow-sky-500/20 transition-all">
+          <div class="w-16 h-16 bg-gradient-to-br from-sky-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Washed Silica Sand</h3>
+          <p class="text-gray-400 mb-6">
+            Premium-grade washed silica sand engineered for precision casting and molding applications.
+          </p>
+          <ul class="space-y-3 text-gray-300">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sky-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>High purity (99%+ silica content)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sky-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Uniform grain size distribution</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sky-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Controlled moisture content</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sky-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Ideal for foundries & casting operations</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Custom Sand Grades -->
+        <div class="glass-card rounded-2xl p-8 hover:shadow-2xl hover:shadow-sky-500/20 transition-all">
+          <div class="w-16 h-16 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Custom Sand Grades</h3>
+          <p class="text-gray-400 mb-6">
+            AFS-based grading tailored to your specific casting requirements and operational needs.
+          </p>
+          <ul class="space-y-3 text-gray-300">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sky-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>AFS-based precision grading (35-70 range)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sky-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Tailored to customer specifications</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sky-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Bulk & bagged supply options</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sky-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Flexible delivery schedules</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Services Section -->
+      <div class="glass-card rounded-2xl p-8">
+        <h3 class="text-2xl font-bold mb-6 text-center">Our Services</h3>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="text-center">
+            <div class="w-12 h-12 bg-sky-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+              </svg>
+            </div>
+            <h4 class="font-semibold mb-2">Customized Sand Grading</h4>
+            <p class="text-sm text-gray-400">Tailored solutions for specific casting needs</p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-12 h-12 bg-sky-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+              </svg>
+            </div>
+            <h4 class="font-semibold mb-2">Bulk Industrial Supply</h4>
+            <p class="text-sm text-gray-400">High-volume supply for large-scale operations</p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-12 h-12 bg-sky-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h4 class="font-semibold mb-2">Contract-Based Supply</h4>
+            <p class="text-sm text-gray-400">Reliable long-term partnership agreements</p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-12 h-12 bg-sky-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+              </svg>
+            </div>
+            <h4 class="font-semibold mb-2">Technical Support</h4>
+            <p class="text-sm text-gray-400">Expert guidance for sand selection</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TECHNOLOGY & PROCESS SECTION ========== -->
+  <section id="process" class="py-20 px-6 bg-gradient-to-b from-slate-950 to-black">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="text-sky-400 text-sm uppercase tracking-wider font-semibold">Technology & Methodology</span>
+        <h2 class="text-3xl md:text-5xl font-bold mt-3 mb-4">Our Production Process</h2>
+        <p class="text-gray-400 text-lg max-w-3xl mx-auto">
+          Advanced multi-stage washing and classification system ensuring consistent quality and purity.
+        </p>
+      </div>
+
+      <!-- Process Steps -->
+      <div class="space-y-6 mb-12">
+        <div class="glass-card rounded-2xl p-6 flex items-start gap-6 process-step">
+          <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl flex items-center justify-center text-xl font-bold">
+            1
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Raw Sand Sourcing</h3>
+            <p class="text-gray-400">High-quality mines with consistent silica content and minimal impurities are carefully selected for raw material extraction.</p>
+          </div>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6 flex items-start gap-6 process-step" style="animation-delay: 0.1s">
+          <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl flex items-center justify-center text-xl font-bold">
+            2
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Washing & Scrubbing</h3>
+            <p class="text-gray-400">Multi-stage washing process removes clay, silt, and surface impurities through intensive scrubbing and water treatment.</p>
+          </div>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6 flex items-start gap-6 process-step" style="animation-delay: 0.2s">
+          <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl flex items-center justify-center text-xl font-bold">
+            3
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Fluidizer Separation</h3>
+            <p class="text-gray-400">Advanced fluidizer technology eliminates dust and micro-impurities, ensuring ultra-clean sand particles.</p>
+          </div>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6 flex items-start gap-6 process-step" style="animation-delay: 0.3s">
+          <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl flex items-center justify-center text-xl font-bold">
+            4
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Classification – Accurate AFS Grading</h3>
+            <p class="text-gray-400">Precision classification systems ensure accurate AFS grading according to customer specifications and industry standards.</p>
+          </div>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6 flex items-start gap-6 process-step" style="animation-delay: 0.4s">
+          <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl flex items-center justify-center text-xl font-bold">
+            5
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Dewatering – Moisture Control</h3>
+            <p class="text-gray-400">State-of-the-art dewatering equipment maintains optimal moisture levels for consistent casting performance.</p>
+          </div>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6 flex items-start gap-6 process-step" style="animation-delay: 0.5s">
+          <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl flex items-center justify-center text-xl font-bold">
+            6
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Drying & Testing – Lab Verification</h3>
+            <p class="text-gray-400">Comprehensive laboratory testing including sieve analysis, moisture testing, and chemical composition verification.</p>
+          </div>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6 flex items-start gap-6 process-step" style="animation-delay: 0.6s">
+          <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl flex items-center justify-center text-xl font-bold">
+            7
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Packaging & Dispatch</h3>
+            <p class="text-gray-400">Final product packaged in bulk or bags with proper labeling and dispatched through efficient logistics network.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quality Assurance & Why Choose Us -->
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="glass-card rounded-2xl p-8">
+          <h3 class="text-2xl font-bold mb-6 gradient-text">Quality Assurance</h3>
+          <ul class="space-y-3 text-gray-300">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sky-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Sieve analysis for grain size distribution</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sky-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Moisture testing at regular intervals</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sky-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Clay & impurity content checks</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sky-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Batch-wise consistency audits</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sky-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Compliance with foundry standards</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="glass-card rounded-2xl p-8">
+          <h3 class="text-2xl font-bold mb-6 gradient-text">Why Choose Us</h3>
+          <ul class="space-y-3 text-gray-300">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sky-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Advanced washing technology</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sky-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Reliable supply chain management</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sky-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>On-time delivery guaranteed</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sky-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Regular lab testing & certification</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sky-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Proven OEM track record</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== INDUSTRIES & AWARDS SECTION ========== -->
+  <section class="py-20 px-6 bg-black">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Industries Served -->
+        <div>
+          <span class="text-sky-400 text-sm uppercase tracking-wider font-semibold">Industries Served</span>
+          <h2 class="text-3xl md:text-4xl font-bold mt-3 mb-6">Diverse Industrial Applications</h2>
+          <div class="space-y-3">
+            <div class="glass-card rounded-xl p-4 flex items-center gap-4">
+              <div class="w-10 h-10 bg-sky-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <span class="font-medium">Automotive Foundries</span>
+            </div>
+            <div class="glass-card rounded-xl p-4 flex items-center gap-4">
+              <div class="w-10 h-10 bg-sky-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <span class="font-medium">Casting & Engineering Components</span>
+            </div>
+            <div class="glass-card rounded-xl p-4 flex items-center gap-4">
+              <div class="w-10 h-10 bg-sky-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <span class="font-medium">Glass & Ceramics</span>
+            </div>
+            <div class="glass-card rounded-xl p-4 flex items-center gap-4">
+              <div class="w-10 h-10 bg-sky-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <span class="font-medium">Construction Materials</span>
+            </div>
+            <div class="glass-card rounded-xl p-4 flex items-center gap-4">
+              <div class="w-10 h-10 bg-sky-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <span class="font-medium">Industrial Manufacturing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Awards & Recognition -->
+        <div>
+          <span class="text-sky-400 text-sm uppercase tracking-wider font-semibold">Awards & Recognitions</span>
+          <h2 class="text-3xl md:text-4xl font-bold mt-3 mb-6">Industry Excellence</h2>
+          <div class="space-y-4">
+            <div class="glass-card rounded-xl p-6">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg mb-1">Ashok Leyland – 75 Years Milestone</h3>
+                  <p class="text-amber-400 text-sm font-semibold mb-2">Gold Award: Best Performance in Business Alignment</p>
+                  <p class="text-gray-400 text-sm">Recognized for exceptional quality standards and consistent supply excellence</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card rounded-xl p-6">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg mb-1">Nelcast – 40 Years Milestone</h3>
+                  <p class="text-blue-400 text-sm font-semibold mb-2">Supplier Excellence Recognition</p>
+                  <p class="text-gray-400 text-sm">Honored for four decades of reliable partnership and quality commitment</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card rounded-xl p-6">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg mb-1">Multiple Supplier Excellence Awards</h3>
+                  <p class="text-green-400 text-sm font-semibold mb-2">Industry Recognition</p>
+                  <p class="text-gray-400 text-sm">Consistently recognized by leading foundries for quality and service</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CLIENTS & TESTIMONIALS SECTION ========== -->
+  <section id="clients" class="py-20 px-6 bg-gradient-to-b from-slate-950 to-black">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="text-sky-400 text-sm uppercase tracking-wider font-semibold">Major Clients</span>
+        <h2 class="text-3xl md:text-5xl font-bold mt-3 mb-4">Trusted by Industry Leaders</h2>
+        <p class="text-gray-400 text-lg max-w-3xl mx-auto">
+          Proud to serve India's leading automotive and engineering manufacturers.
+        </p>
+      </div>
+
+      <!-- Client Logos Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+        <div class="glass-card rounded-xl p-6 flex items-center justify-center h-32">
+          <span class="text-lg font-bold text-center">Ashok Leyland</span>
+        </div>
+        <div class="glass-card rounded-xl p-6 flex items-center justify-center h-32">
+          <span class="text-lg font-bold text-center">Nelcast Limited</span>
+        </div>
+        <div class="glass-card rounded-xl p-6 flex items-center justify-center h-32">
+          <span class="text-lg font-bold text-center">Brakes India</span>
+        </div>
+        <div class="glass-card rounded-xl p-6 flex items-center justify-center h-32">
+          <span class="text-lg font-bold text-center">Donn Brake</span>
+        </div>
+      </div>
+
+      <!-- Testimonials -->
+      <div class="text-center mb-8">
+        <h3 class="text-2xl md:text-3xl font-bold">Client Testimonials</h3>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="glass-card rounded-2xl p-8">
+          <div class="flex gap-1 mb-4">
+            <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+          </div>
+          <p class="text-gray-300 text-lg mb-6 italic">
+            "Reliable supplier with consistent quality sand. Their technical support and on-time delivery have been instrumental in maintaining our production schedules."
+          </p>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-sky-500 to-blue-600 rounded-full flex items-center justify-center text-xl font-bold">
+              N
+            </div>
+            <div>
+              <div class="font-semibold">Nelcast Limited</div>
+              <div class="text-sm text-gray-400">Leading Foundry Partner</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card rounded-2xl p-8">
+          <div class="flex gap-1 mb-4">
+            <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+          </div>
+          <p class="text-gray-300 text-lg mb-6 italic">
+            "Professional, punctual, and quality-driven. Precision Sand has been a trusted partner in our manufacturing excellence journey for years."
+          </p>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-sky-500 to-blue-600 rounded-full flex items-center justify-center text-xl font-bold">
+              A
+            </div>
+            <div>
+              <div class="font-semibold">Ashok Leyland Partner</div>
+              <div class="text-sm text-gray-400">OEM Supplier Network</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="glass-card rounded-2xl p-8 mt-12">
+        <h3 class="text-2xl font-bold mb-6 text-center gradient-text">Certifications & Compliance</h3>
+        <div class="grid md:grid-cols-3 gap-6 text-center">
+          <div>
+            <div class="w-16 h-16 bg-sky-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <h4 class="font-semibold mb-2">Internal Quality Standards</h4>
+            <p class="text-sm text-gray-400">Stringent in-house quality control protocols</p>
+          </div>
+          <div>
+            <div class="w-16 h-16 bg-sky-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+              </svg>
+            </div>
+            <h4 class="font-semibold mb-2">Foundry-Grade Compliance</h4>
+            <p class="text-sm text-gray-400">Meeting industry-specific foundry requirements</p>
+          </div>
+          <div>
+            <div class="w-16 h-16 bg-sky-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h4 class="font-semibold mb-2">Environment & Safety</h4>
+            <p class="text-sm text-gray-400">Committed to sustainable manufacturing practices</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQs SECTION ========== -->
+  <section id="faqs" class="py-20 px-6 bg-black">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="text-sky-400 text-sm uppercase tracking-wider font-semibold">FAQs</span>
+        <h2 class="text-3xl md:text-5xl font-bold mt-3 mb-4">Frequently Asked Questions</h2>
+        <p class="text-gray-400 text-lg">
+          Quick answers to common questions about our products and services.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        <details class="glass-card rounded-xl p-6 group">
+          <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center">
+            What AFS ranges do you supply?
+            <svg class="w-5 h-5 text-sky-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <p class="text-gray-400 mt-4">
+            We supply a complete range of AFS grades from 35 to 70, covering fine, medium, and coarse sand classifications suitable for various foundry applications including molding and core-making operations.
+          </p>
+        </details>
+
+        <details class="glass-card rounded-xl p-6 group">
+          <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center">
+            Do you offer customized sand grades?
+            <svg class="w-5 h-5 text-sky-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <p class="text-gray-400 mt-4">
+            Yes, we specialize in custom AFS-based grading tailored to your specific casting requirements. Our technical team works closely with clients to develop sand specifications that optimize their manufacturing processes.
+          </p>
+        </details>
+
+        <details class="glass-card rounded-xl p-6 group">
+          <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center">
+            What are your bulk vs bag supply options?
+            <svg class="w-5 h-5 text-sky-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <p class="text-gray-400 mt-4">
+            We offer flexible supply options including bulk truckload deliveries for high-volume operations and bagged supplies (25kg/50kg bags) for smaller requirements. Custom packaging solutions are also available based on your needs.
+          </p>
+        </details>
+
+        <details class="glass-card rounded-xl p-6 group">
+          <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center">
+            How frequently is quality tested?
+            <svg class="w-5 h-5 text-sky-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <p class="text-gray-400 mt-4">
+            Every production batch undergoes comprehensive laboratory testing including sieve analysis, moisture content, clay impurity levels, and AFS grading verification. Test certificates are provided with each shipment.
+          </p>
+        </details>
+
+        <details class="glass-card rounded-xl p-6 group">
+          <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center">
+            What are typical delivery timelines?
+            <svg class="w-5 h-5 text-sky-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <p class="text-gray-400 mt-4">
+            Standard delivery timelines range from 3-7 days depending on location and order volume. For contract-based supplies, we maintain buffer inventory to ensure just-in-time delivery aligned with your production schedules.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section id="contact" class="py-20 px-6 bg-gradient-to-b from-slate-950 to-black">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="text-sky-400 text-sm uppercase tracking-wider font-semibold">Contact Us</span>
+        <h2 class="text-3xl md:text-5xl font-bold mt-3 mb-4">Get in Touch</h2>
+        <p class="text-gray-400 text-lg max-w-3xl mx-auto">
+          Ready to discuss your silica sand requirements? Our team is here to help you find the perfect solution.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Contact Information -->
+        <div class="space-y-6">
+          <div class="glass-card rounded-2xl p-6">
+            <h3 class="text-xl font-bold mb-4">Company Information</h3>
+            <div class="space-y-4">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-sky-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold mb-1">Company Name</p>
+                  <p class="text-gray-400 text-sm">Precision Sand Industries Pvt. Ltd.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-sky-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold mb-1">Plant Address</p>
+                  <p class="text-gray-400 text-sm">Industrial Area, Sector 12<br />Foundry Hub, Tamil Nadu - 600001<br />India</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-sky-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold mb-1">Phone</p>
+                  <p class="text-gray-400 text-sm">+91 98765 43210<br />+91 98765 43211</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-sky-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold mb-1">Email</p>
+                  <p class="text-gray-400 text-sm">sales@precisionsand.in<br />info@precisionsand.in</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-sky-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold mb-1">Website</p>
+                  <p class="text-gray-400 text-sm">www.precisionsand.in</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card rounded-2xl p-6">
+            <h3 class="text-xl font-bold mb-4">Business Hours</h3>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between">
+                <span class="text-gray-400">Monday - Friday</span>
+                <span class="font-semibold">9:00 AM - 6:00 PM</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-400">Saturday</span>
+                <span class="font-semibold">9:00 AM - 2:00 PM</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-400">Sunday</span>
+                <span class="font-semibold">Closed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="glass-card rounded-2xl p-8">
+          <h3 class="text-2xl font-bold mb-6">Send Us a Message</h3>
+          <form class="space-y-4" id="contactForm">
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <label for="name" class="block text-sm font-medium mb-2">Name *</label>
+                <input type="text" id="name" name="name" required class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-sky-400 transition" placeholder="Your name">
+              </div>
+              <div>
+                <label for="company" class="block text-sm font-medium mb-2">Company *</label>
+                <input type="text" id="company" name="company" required class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-sky-400 transition" placeholder="Company name">
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <label for="email" class="block text-sm font-medium mb-2">Email *</label>
+                <input type="email" id="email" name="email" required class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-sky-400 transition" placeholder="your@email.com">
+              </div>
+              <div>
+                <label for="phone" class="block text-sm font-medium mb-2">Phone *</label>
+                <input type="tel" id="phone" name="phone" required class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-sky-400 transition" placeholder="+91 XXXXX XXXXX">
+              </div>
+            </div>
+
+            <div>
+              <label for="afs" class="block text-sm font-medium mb-2">Required AFS Grade</label>
+              <input type="text" id="afs" name="afs" class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-sky-400 transition" placeholder="e.g., AFS 45-50">
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-medium mb-2">Message *</label>
+              <textarea id="message" name="message" rows="5" required class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-sky-400 transition" placeholder="Tell us about your requirements, volume, delivery location, etc."></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-gradient-to-r from-sky-500 to-blue-600 px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:shadow-sky-500/50 transition text-base">
+              Submit Inquiry
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-black border-t border-white/10 py-12 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <!-- Company Info -->
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-2 mb-4">
+            <div class="h-10 w-10 rounded-xl bg-gradient-to-tr from-sky-500 to-blue-600 shadow-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+              </svg>
+            </div>
+            <span class="text-xl font-bold">Precision<span class="gradient-text">Sand</span></span>
+          </div>
+          <p class="text-gray-400 text-sm mb-4">
+            Leading supplier of premium washed silica sand for foundries and industries across India. Trusted by major OEMs for consistent quality and reliable supply.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="#about" class="hover:text-sky-400 transition">About Us</a></li>
+            <li><a href="#products" class="hover:text-sky-400 transition">Products</a></li>
+            <li><a href="#process" class="hover:text-sky-400 transition">Process</a></li>
+            <li><a href="#clients" class="hover:text-sky-400 transition">Clients</a></li>
+            <li><a href="#faqs" class="hover:text-sky-400 transition">FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="font-semibold mb-4">Contact</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li>+91 98765 43210</li>
+            <li>sales@precisionsand.in</li>
+            <li>Tamil Nadu, India</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-sm text-gray-400">
+          © <span id="footerYear">2025</span> Precision Sand Industries. All rights reserved.
+        </p>
+        <div class="flex gap-4">
+          <a href="#" class="text-gray-400 hover:text-sky-400 transition">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-sky-400 transition">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-sky-400 transition">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    // Update years
+    document.getElementById('footerYear').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const menuClose = document.getElementById('menuClose');
+    const mobileSidebar = document.getElementById('mobileSidebar');
+    const menuOverlay = document.getElementById('menuOverlay');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    function openMenu() {
+      mobileSidebar.classList.add('active');
+      menuOverlay.classList.remove('hidden');
+      menuToggle.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      mobileSidebar.classList.remove('active');
+      menuOverlay.classList.add('hidden');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    menuToggle.addEventListener('click', openMenu);
+    menuClose.addEventListener('click', closeMenu);
+    menuOverlay.addEventListener('click', closeMenu);
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    // Close menu on ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileSidebar.classList.contains('active')) {
+        closeMenu();
+      }
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href !== '#' && href.length > 1) {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        }
+      });
+    });
+
+    // Scroll reveal animation
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -80px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fade-in-up');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Observe sections for animation
+    document.querySelectorAll('section').forEach(section => {
+      observer.observe(section);
+    });
+
+    // Process steps staggered animation
+    const processSteps = document.querySelectorAll('.process-step');
+    const processObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateX(0)';
+          }, index * 100);
+          processObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    processSteps.forEach(step => {
+      processObserver.observe(step);
+    });
+
+    // Form submission handler
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(this);
+      const data = Object.fromEntries(formData);
+      
+      // Show success message (replace with actual API call)
+      alert('Thank you for your inquiry! We will get back to you soon.');
+      
+      // Reset form
+      this.reset();
+    });
+
+    // Add parallax effect to hero
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const parallaxElements = document.querySelectorAll('.animate-float');
+      
+      parallaxElements.forEach(el => {
+        const speed = 0.5;
+        el.style.transform = `translateY(${scrolled * speed}px)`;
+      });
+    });
+  </script>
+</body>
+</html>

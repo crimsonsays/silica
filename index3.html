@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Precision Sand – Industrial Silica Sand Solutions</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            bg: '#020617',
+            bgSoft: '#050b1f',
+            accent: '#38bdf8',
+            accentSoft: '#0ea5e9'
+          },
+          boxShadow: {
+            'glass': '0 18px 45px rgba(15,23,42,0.8)'
+          },
+          backdropBlur: {
+            xs: '2px',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Glassmorphism helper */
+    .glass-card {
+      background: radial-gradient(circle at top left, rgba(56,189,248,0.12), transparent 55%),
+                  radial-gradient(circle at bottom right, rgba(59,130,246,0.10), transparent 55%),
+                  rgba(15,23,42,0.85);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(148,163,184,0.3);
+      box-shadow: 0 24px 60px rgba(15,23,42,0.95);
+    }
+
+    .pill {
+      background: radial-gradient(circle at 0 0, rgba(56,189,248,0.25), transparent 60%),
+                  rgba(15,23,42,0.9);
+      border: 1px solid rgba(148,163,184,0.35);
+      backdrop-filter: blur(20px);
+    }
+
+    /* Simple scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.45s cubic-bezier(0.22, 0.61, 0.36, 1),
+                  transform 0.45s cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Gradient background */
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(56,189,248,0.16), transparent 55%),
+        radial-gradient(circle at bottom right, rgba(129,140,248,0.16), transparent 55%),
+        #020617;
+      color: #e5e7eb;
+    }
+  </style>
+</head>
+<body class="min-h-screen text-slate-100">
+  <!-- Navigation -->
+  <header class="sticky top-0 z-40 border-b border-slate-800/80 bg-bg/80 backdrop-blur-md">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:py-4">
+      <div class="flex items-center gap-2">
+        <div class="h-8 w-8 rounded-xl bg-gradient-to-tr from-accent to-sky-500 shadow-lg shadow-sky-500/40"></div>
+        <div class="flex flex-col leading-tight">
+          <span class="text-sm font-semibold tracking-widest text-slate-100 uppercase">
+            Precision Sand
+          </span>
+          <span class="text-[11px] text-slate-400">
+            Industrial Silica Sand Solutions
+          </span>
+        </div>
+      </div>
+      <nav class="hidden items-center gap-7 text-sm text-slate-300 md:flex">
+        <a href="#home" class="hover:text-accent transition-colors">Home</a>
+        <a href="#about" class="hover:text-accent transition-colors">About</a>
+        <a href="#products" class="hover:text-accent transition-colors">Products</a>
+        <a href="#process" class="hover:text-accent transition-colors">Technology</a>
+        <a href="#quality" class="hover:text-accent transition-colors">Quality</a>
+        <a href="#clients" class="hover:text-accent transition-colors">Clients</a>
+        <a href="#contact" class="hover:text-accent transition-colors">Contact</a>
+      </nav>
+      <a href="#contact"
+         class="hidden rounded-full bg-accent px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-950 shadow-lg shadow-sky-500/40 transition hover:bg-accentSoft md:inline-block">
+        Get a quote
+      </a>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-6xl px-4">
+    <!-- Hero -->
+    <section id="home" class="reveal pt-12 pb-16 md:flex md:items-center md:gap-10 md:pt-16 md:pb-20">
+      <div class="md:w-1/2 space-y-6">
+        <span class="pill inline-flex items-center gap-2 rounded-full px-3 py-1 text-[11px] font-medium uppercase tracking-[0.22em] text-slate-300">
+          <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_0_6px_rgba(16,185,129,0.35)]"></span>
+          Foundry-grade washed silica sand
+        </span>
+
+        <h1 class="text-3xl font-semibold tracking-tight text-slate-50 sm:text-4xl lg:text-5xl">
+          Precision Sand for <span class="text-accent">Precision Casting</span>
+        </h1>
+
+        <p class="max-w-xl text-sm text-slate-300 sm:text-base">
+          Industrial-grade washed silica sand engineered for foundries and critical manufacturing.
+          High purity, tight AFS control, and reliable contract-based supply for demanding OEMs.
+        </p>
+
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div class="glass-card rounded-2xl p-4 transition hover:-translate-y-1 hover:shadow-glass">
+            <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">
+              Complete AFS Range
+            </h3>
+            <p class="mt-2 text-sm text-slate-300">
+              From fine to coarse grades, calibrated silica sand for diverse molding and core shop applications.
+            </p>
+          </div>
+          <div class="glass-card rounded-2xl p-4 transition hover:-translate-y-1 hover:shadow-glass">
+            <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">
+              Advanced Washing Technology
+            </h3>
+            <p class="mt-2 text-sm text-slate-300">
+              Multi-stage washing and fluidizer systems to remove clay, dust, and micro-impurities.
+            </p>
+          </div>
+          <div class="glass-card rounded-2xl p-4 transition hover:-translate-y-1 hover:shadow-glass">
+            <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">
+              Trusted by Leading OEMs
+            </h3>
+            <p class="mt-2 text-sm text-slate-300">
+              Long-term supply relationships with automotive and engineering majors across India.
+            </p>
+          </div>
+          <div class="glass-card rounded-2xl p-4 transition hover:-translate-y-1 hover:shadow-glass">
+            <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">
+              Consistent Quality Supply
+            </h3>
+            <p class="mt-2 text-sm text-slate-300">
+              Batch-wise lab verification and stable moisture control for predictable casting performance.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-4 pt-2">
+          <a href="#products"
+             class="inline-flex items-center justify-center rounded-full bg-accent px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-slate-950 shadow-lg shadow-sky-500/40 transition hover:bg-accentSoft">
+            Our Products
+          </a>
+          <a href="#contact"
+             class="inline-flex items-center justify-center rounded-full border border-slate-600/70 bg-slate-900/40 px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-slate-200 backdrop-blur-md transition hover:border-accent hover:text-accent">
+            Contact Us
+          </a>
+        </div>
+
+        <div class="pt-4">
+          <p class="text-[11px] uppercase tracking-[0.24em] text-slate-400">
+            Trusted by
+          </p>
+          <div class="mt-3 flex flex-wrap items-center gap-4 text-xs text-slate-300/80">
+            <span class="rounded-full border border-slate-700/80 bg-slate-900/60 px-3 py-1">
+              Ashok Leyland
+            </span>
+            <span class="rounded-full border border-slate-700/80 bg-slate-900/60 px-3 py-1">
+              Nelcast Limited
+            </span>
+            <span class="rounded-full border border-slate-700/80 bg-slate-900/60 px-3 py-1">
+              Brakes India
+            </span>
+            <span class="rounded-full border border-slate-700/80 bg-slate-900/60 px-3 py-1">
+              Donn Brake
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero visual -->
+      <div class="mt-10 md:mt-0 md:w-1/2">
+        <div class="relative mx-auto max-w-md">
+          <div class="glass-card relative overflow-hidden rounded-3xl p-6">
+            <div class="pointer-events-none absolute -inset-16 opacity-30 blur-3xl"
+                 style="background: radial-gradient(circle at 0 0,#22c55e,transparent 55%),radial-gradient(circle at 100% 100%,#38bdf8,transparent 55%);">
+            </div>
+            <div class="relative">
+              <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-300">
+                Foundry Sand Snapshot
+              </p>
+              <p class="mt-2 text-sm text-slate-300">
+                Uniform, high-purity washed silica sand with tightly controlled AFS and moisture levels for consistent mold strength and surface finish.
+              </p>
+              <div class="mt-5 grid grid-cols-3 gap-3 text-xs text-slate-200">
+                <div class="rounded-2xl bg-slate-900/40 p-3 backdrop-blur-sm">
+                  <p class="text-[10px] uppercase tracking-[0.18em] text-slate-400">
+                    Purity
+                  </p>
+                  <p class="mt-2 text-lg font-semibold text-emerald-400">
+                    99%+
+                  </p>
+                  <p class="mt-1 text-[11px] text-slate-400">
+                    Silica content (typical)
+                  </p>
+                </div>
+                <div class="rounded-2xl bg-slate-900/40 p-3 backdrop-blur-sm">
+                  <p class="text-[10px] uppercase tracking-[0.18em] text-slate-400">
+                    AFS Range
+                  </p>
+                  <p class="mt-2 text-lg font-semibold text-sky-400">
+                    35–70
+                  </p>
+                  <p class="mt-1 text-[11px] text-slate-400">
+                    Major foundry grades
+                  </p>
+                </div>
+                <div class="rounded-2xl bg-slate-900/40 p-3 backdrop-blur-sm">
+                  <p class="text-[10px] uppercase tracking-[0.18em] text-slate-400">
+                    Moisture
+                  </p>
+                  <p class="mt-2 text-lg font-semibold text-amber-300">
+                    Controlled
+                  </p>
+                  <p class="mt-1 text-[11px] text-slate-400">
+                    Stable batch to batch
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Floating chip -->
+          <div class="glass-card absolute -left-6 -bottom-6 w-32 rounded-2xl p-3 text-[11px] text-slate-200">
+            <p class="uppercase tracking-[0.16em] text-slate-400">
+              Supply
+            </p>
+            <p class="mt-1 font-semibold">
+              Bulk & bagged
+            </p>
+            <p class="text-[10px] text-slate-400">
+              Contract-based logistics for OEMs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="reveal border-t border-slate-800/70 py-14">
+      <div class="grid gap-10 md:grid-cols-[1.2fr,1fr] md:items-start">
+        <div>
+          <h2 class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
+            About Us
+          </h2>
+          <p class="mt-3 text-2xl font-semibold text-slate-50">
+            Industry-grade silica sand supplier with a long-term OEM mindset.
+          </p>
+          <p class="mt-4 text-sm text-slate-300">
+            Precision Sand specializes in washed silica sand engineered for automotive, engineering, and industrial foundries.
+            With years of focused expertise, the operations are designed around repeatable quality and on-time supply.
+          </p>
+          <p class="mt-3 text-sm text-slate-300">
+            Major manufacturers and OEM-approved foundries rely on these grades for critical casting programs, long-running platforms, and new product development.
+            The company builds relationships on transparent testing, steady volumes, and responsive technical support.
+          </p>
+          <div class="mt-6 grid gap-4 sm:grid-cols-3">
+            <div class="glass-card rounded-2xl p-4">
+              <p class="text-[10px] uppercase tracking-[0.2em] text-slate-400">
+                Years of Expertise
+              </p>
+              <p class="mt-2 text-xl font-semibold text-slate-50">
+                10+ 
+              </p>
+              <p class="mt-1 text-[11px] text-slate-400">
+                Focused on foundry sand
+              </p>
+            </div>
+            <div class="glass-card rounded-2xl p-4">
+              <p class="text-[10px] uppercase tracking-[0.2em] text-slate-400">
+                OEM-Focused
+              </p>
+              <p class="mt-2 text-xl font-semibold text-slate-50">
+                Tier-1
+              </p>
+              <p class="mt-1 text-[11px] text-slate-400">
+                Trusted by leading OEM foundries
+              </p>
+            </div>
+            <div class="glass-card rounded-2xl p-4">
+              <p class="text-[10px] uppercase tracking-[0.2em] text-slate-400">
+                Partnership
+              </p>
+              <p class="mt-2 text-xl font-semibold text-slate-50">
+                Long-term
+              </p>
+              <p class="mt-1 text-[11px] text-slate-400">
+                Contract-based supply & planning
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <div class="glass-card rounded-3xl p-5">
+            <h3 class="text-sm font-semibold text-slate-100">
+              Mission & Commitment to Quality
+            </h3>
+            <p class="mt-2 text-sm text-slate-300">
+              To deliver consistent, lab-verified silica sand that enables foundries to run stable, efficient, and defect-free casting operations.
+            </p>
+            <p class="mt-2 text-sm text-slate-300">
+              From raw sand sourcing to dispatch, every step is aligned to measurable quality metrics and responsible manufacturing practices.
+            </p>
+          </div>
+          <div class="rounded-3xl border border-dashed border-slate-700/80 bg-slate-900/40 p-4 text-xs text-slate-400">
+            <p class="font-medium text-slate-300">
+              Experienced team & operations
+            </p>
+            <p class="mt-1">
+              Plant, quality lab, and logistics teams work in sync with your casting schedules.
+              Team photos and leadership profiles can be added here for deeper brand storytelling.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products & Services -->
+    <section id="products" class="reveal border-t border-slate-800/70 py-14">
+      <div class="flex items-center justify-between gap-4">
+        <div>
+          <h2 class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
+            Our Products
+          </h2>
+          <p class="mt-3 text-2xl font-semibold text-slate-50">
+            Washed silica sand and custom grades tailored to your foundry.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-8 grid gap-6 lg:grid-cols-[2fr,1.2fr]">
+        <div class="space-y-4">
+          <!-- Washed Silica Sand -->
+          <div class="glass-card rounded-3xl p-5">
+            <h3 class="text-sm font-semibold text-slate-100">
+              Washed Silica Sand
+            </h3>
+            <p class="mt-2 text-sm text-slate-300">
+              High-purity washed silica sand with uniform grain size distribution and controlled moisture content, ideal for molding and core-making.
+            </p>
+            <ul class="mt-3 space-y-1.5 text-sm text-slate-300">
+              <li>• High purity with low clay and dust content.</li>
+              <li>• Uniform grain size for predictable permeability and strength.</li>
+              <li>• Moisture closely monitored to support consistent sand mix properties.</li>
+              <li>• Engineered for automotive and engineering casting lines.</li>
+            </ul>
+          </div>
+
+          <!-- Custom Sand Grades -->
+          <div class="glass-card rounded-3xl p-5">
+            <h3 class="text-sm font-semibold text-slate-100">
+              Custom Sand Grades
+            </h3>
+            <p class="mt-2 text-sm text-slate-300">
+              AFS-based grading tailored to your casting process, core shop, and specific component requirements.
+            </p>
+            <ul class="mt-3 space-y-1.5 text-sm text-slate-300">
+              <li>• AFS-controlled grades designed around your existing recipes.</li>
+              <li>• Support for trial batches and PPAP / NPI requirements.</li>
+              <li>• Available in bulk tanker, loose trucks, or bagged options.</li>
+              <li>• Flexibility for dual-grade or multi-grade foundry layouts.</li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="glass-card rounded-3xl p-5">
+            <h3 class="text-sm font-semibold text-slate-100">
+              Services
+            </h3>
+            <ul class="mt-3 space-y-1.5 text-sm text-slate-300">
+              <li>• Customized sand grading solutions for new and existing lines.</li>
+              <li>• Bulk industrial supply aligned with your production plan.</li>
+              <li>• Contract-based supply with defined volumes and quality norms.</li>
+              <li>• Technical support for foundry sand selection and troubleshooting.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Why Trust / Why Choose -->
+        <div class="space-y-5">
+          <div class="glass-card rounded-3xl p-5">
+            <h3 class="text-sm font-semibold text-slate-100">
+              Why Trust Us
+            </h3>
+            <ul class="mt-3 space-y-1.5 text-sm text-slate-300">
+              <li>• Complete AFS range availability across major foundry grades.</li>
+              <li>• Advanced fluidizer and washing systems for cleaner sand.</li>
+              <li>• Strict lab checks on every batch for key parameters.</li>
+              <li>• Decades-long relationships with established casting units.</li>
+              <li>• Recognized by leading OEMs for quality and reliability.</li>
+            </ul>
+          </div>
+          <div class="glass-card rounded-3xl p-5">
+            <h3 class="text-sm font-semibold text-slate-100">
+              Why Choose Us
+            </h3>
+            <ul class="mt-3 space-y-1.5 text-sm text-slate-300">
+              <li>• Advanced washing and classification technology.</li>
+              <li>• Reliable supply chain and logistics planning.</li>
+              <li>• On-time deliveries backed by committed contracts.</li>
+              <li>• Regular lab testing and documented quality reports.</li>
+              <li>• Proven track record with OEM-approved foundries.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology & Methodology -->
+    <section id="process" class="reveal border-t border-slate-800/70 py-14">
+      <div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+        <div>
+          <h2 class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
+            Technology & Methodology
+          </h2>
+          <p class="mt-3 text-2xl font-semibold text-slate-50">
+            Controlled, step-wise processing for repeatable sand performance.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-8 grid gap-6 md:grid-cols-[1.3fr,1fr]">
+        <!-- Process steps -->
+        <ol class="space-y-3 text-sm text-slate-300">
+          <li class="glass-card relative rounded-2xl p-4">
+            <span class="absolute -left-3 top-4 flex h-6 w-6 items-center justify-center rounded-full bg-accent text-[11px] font-semibold text-slate-950 shadow-lg">
+              1
+            </span>
+            <p class="font-semibold text-slate-100">Raw Sand Sourcing – High-quality mines</p>
+            <p class="mt-1 text-sm">
+              Carefully selected deposits with consistent silica content and low inherent impurities.
+            </p>
+          </li>
+          <li class="glass-card relative rounded-2xl p-4">
+            <span class="absolute -left-3 top-4 flex h-6 w-6 items-center justify-center rounded-full bg-accent text-[11px] font-semibold text-slate-950 shadow-lg">
+              2
+            </span>
+            <p class="font-semibold text-slate-100">Washing & Scrubbing – Clay & impurity removal</p>
+            <p class="mt-1 text-sm">
+              Multi-stage washing and intensive scrubbing to break coatings and wash away fines.
+            </p>
+          </li>
+          <li class="glass-card relative rounded-2xl p-4">
+            <span class="absolute -left-3 top-4 flex h-6 w-6 items-center justify-center rounded-full bg-accent text-[11px] font-semibold text-slate-950 shadow-lg">
+              3
+            </span>
+            <p class="font-semibold text-slate-100">Fluidizer Separation – Dust & micro-impurities</p>
+            <p class="mt-1 text-sm">
+              Fluidizer systems separate light particles and ultra-fines to achieve cleaner sand.
+            </p>
+          </li>
+          <li class="glass-card relative rounded-2xl p-4">
+            <span class="absolute -left-3 top-4 flex h-6 w-6 items-center justify-center rounded-full bg-accent text-[11px] font-semibold text-slate-950 shadow-lg">
+              4
+            </span>
+            <p class="font-semibold text-slate-100">Classification – Accurate AFS grading</p>
+            <p class="mt-1 text-sm">
+              Controlled classification lines generate stable AFS bands aligned with foundry requirements.
+            </p>
+          </li>
+          <li class="glass-card relative rounded-2xl p-4">
+            <span class="absolute -left-3 top-4 flex h-6 w-6 items-center justify-center rounded-full bg-accent text-[11px] font-semibold text-slate-950 shadow-lg">
+              5
+            </span>
+            <p class="font-semibold text-slate-100">Dewatering – Moisture control</p>
+            <p class="mt-1 text-sm">
+              Dewatering equipment and controlled drying ensure moisture is within tight specification windows.
+            </p>
+          </li>
+          <li class="glass-card relative rounded-2xl p-4">
+            <span class="absolute -left-3 top-4 flex h-6 w-6 items-center justify-center rounded-full bg-accent text-[11px] font-semibold text-slate-950 shadow-lg">
+              6
+            </span>
+            <p class="font-semibold text-slate-100">Drying & Testing – Lab verification</p>
+            <p class="mt-1 text-sm">
+              Lab checks for sieve distribution, clay content, LOI, and moisture to confirm batch approval.
+            </p>
+          </li>
+          <li class="glass-card relative rounded-2xl p-4">
+            <span class="absolute -left-3 top-4 flex h-6 w-6 items-center justify-center rounded-full bg-accent text-[11px] font-semibold text-slate-950 shadow-lg">
+              7
+            </span>
+            <p class="font-semibold text-slate-100">Packaging & Dispatch – Bulk or bagged</p>
+            <p class="mt-1 text-sm">
+              Final product is dispatched in bulk or bags with clear batch identification for traceability.
+            </p>
+          </li>
+        </ol>
+
+        <!-- Quality Assurance -->
+        <div id="quality" class="space-y-5">
+          <div class="glass-card rounded-3xl p-5">
+            <h3 class="text-sm font-semibold text-slate-100">
+              Quality Assurance & Lab
+            </h3>
+            <ul class="mt-3 space-y-1.5 text-sm text-slate-300">
+              <li>• Routine sieve analysis to monitor AFS distribution.</li>
+              <li>• Moisture testing at defined intervals across batches.</li>
+              <li>• Clay, dust, and impurity checks for each production lot.</li>
+              <li>• Batch-wise consistency audits and documented results.</li>
+              <li>• Compliance with leading foundry and OEM standards.</li>
+            </ul>
+          </div>
+
+          <div class="glass-card rounded-3xl p-5">
+            <h3 class="text-sm font-semibold text-slate-100">
+              Certifications & Compliance
+            </h3>
+            <ul class="mt-3 space-y-1.5 text-sm text-slate-300">
+              <li>• Internal quality system aligned with foundry requirements.</li>
+              <li>• Foundry-grade performance benchmarks and validation support.</li>
+              <li>• Environment, health, and safety adherence at the plant.</li>
+            </ul>
+            <p class="mt-3 text-xs text-slate-400">
+              Certificates, audit reports, and policy documents can be showcased here as downloadable PDFs or thumbnails.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industries, Awards, Clients & Testimonials -->
+    <section id="clients" class="reveal border-t border-slate-800/70 py-14">
+      <div class="grid gap-8 lg:grid-cols-[1.1fr,1.4fr]">
+        <!-- Industries + Awards -->
+        <div class="space-y-6">
+          <div>
+            <h2 class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
+              Industries Served
+            </h2>
+            <p class="mt-3 text-2xl font-semibold text-slate-50">
+              Silica sand engineered for demanding industrial segments.
+            </p>
+            <ul class="mt-4 grid gap-2 text-sm text-slate-300 sm:grid-cols-2">
+              <li class="rounded-xl bg-slate-900/40 px-3 py-2 backdrop-blur-sm">
+                Automotive Foundries
+              </li>
+              <li class="rounded-xl bg-slate-900/40 px-3 py-2 backdrop-blur-sm">
+                Casting & Engineering Components
+              </li>
+              <li class="rounded-xl bg-slate-900/40 px-3 py-2 backdrop-blur-sm">
+                Glass & Ceramics
+              </li>
+              <li class="rounded-xl bg-slate-900/40 px-3 py-2 backdrop-blur-sm">
+                Construction Materials
+              </li>
+              <li class="rounded-xl bg-slate-900/40 px-3 py-2 backdrop-blur-sm">
+                Industrial Manufacturing
+              </li>
+            </ul>
+          </div>
+
+          <div class="glass-card rounded-3xl p-5">
+            <h3 class="text-sm font-semibold text-slate-100">
+              Awards & Recognitions
+            </h3>
+            <ul class="mt-3 space-y-1.5 text-sm text-slate-300">
+              <li>• Ashok Leyland – 75 Years Milestone: Gold Award for Best Performance in Business Alignment.</li>
+              <li>• Nelcast – 40 Years Milestone Recognition for supplier partnership.</li>
+              <li>• Multiple supplier excellence recognitions from leading foundries.</li>
+            </ul>
+            <p class="mt-3 text-xs text-slate-400">
+              Place award and recognition images here – Canva-designed badges or certificates work well with this section.
+            </p>
+          </div>
+        </div>
+
+        <!-- Clients & Testimonials -->
+        <div class="space-y-5">
+          <div class="glass-card rounded-3xl p-5">
+            <h3 class="text-sm font-semibold text-slate-100">
+              Major Clients
+            </h3>
+            <div class="mt-3 grid gap-3 text-sm text-slate-300 sm:grid-cols-2">
+              <div class="rounded-2xl border border-slate-700/80 bg-slate-900/40 p-3">
+                Ashok Leyland
+              </div>
+              <div class="rounded-2xl border border-slate-700/80 bg-slate-900/40 p-3">
+                Nelcast Limited
+              </div>
+              <div class="rounded-2xl border border-slate-700/80 bg-slate-900/40 p-3">
+                Brakes India
+              </div>
+              <div class="rounded-2xl border border-slate-700/80 bg-slate-900/40 p-3">
+                Donn Brake
+              </div>
+              <div class="rounded-2xl border border-dashed border-slate-700/80 bg-slate-900/20 p-3 text-xs text-slate-400">
+                Other leading automotive and engineering foundries across India.
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card rounded-3xl p-5">
+            <h3 class="text-sm font-semibold text-slate-100">
+              Testimonials
+            </h3>
+            <div class="mt-3 space-y-3 text-sm text-slate-300">
+              <div class="rounded-2xl bg-slate-900/40 p-3">
+                <p>“Reliable supplier with consistent quality sand.”</p>
+                <p class="mt-1 text-xs text-slate-400">– Nelcast</p>
+              </div>
+              <div class="rounded-2xl bg-slate-900/40 p-3">
+                <p>“Professional, punctual, and quality-driven.”</p>
+                <p class="mt-1 text-xs text-slate-400">– Ashok Leyland Partner</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section id="faqs" class="reveal border-t border-slate-800/70 py-14">
+      <div class="max-w-3xl">
+        <h2 class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
+          FAQs
+        </h2>
+        <p class="mt-3 text-2xl font-semibold text-slate-50">
+          Answers to common questions from foundry and procurement teams.
+        </p>
+
+        <div class="mt-6 space-y-3 text-sm text-slate-300">
+          <details class="glass-card rounded-2xl p-4">
+            <summary class="cursor-pointer text-sm font-semibold text-slate-100">
+              What AFS ranges do you supply?
+            </summary>
+            <p class="mt-2 text-sm text-slate-300">
+              A wide range of AFS grades typically from 35 to 70 can be supplied, with specific bands aligned to your molding and core processes.
+            </p>
+          </details>
+
+          <details class="glass-card rounded-2xl p-4">
+            <summary class="cursor-pointer text-sm font-semibold text-slate-100">
+              Do you offer customized sand grades?
+            </summary>
+            <p class="mt-2 text-sm text-slate-300">
+              Yes, custom AFS distributions and blends are developed based on your casting requirements, existing recipes, and trial results.
+            </p>
+          </details>
+
+          <details class="glass-card rounded-2xl p-4">
+            <summary class="cursor-pointer text-sm font-semibold text-slate-100">
+              What are your bulk vs bag supply options?
+            </summary>
+            <p class="mt-2 text-sm text-slate-300">
+              Sand is supplied in bulk tankers, loose trucks, or bagged formats depending on your plant layout and handling systems.
+            </p>
+          </details>
+
+          <details class="glass-card rounded-2xl p-4">
+            <summary class="cursor-pointer text-sm font-semibold text-slate-100">
+              How frequently is quality tested?
+            </summary>
+            <p class="mt-2 text-sm text-slate-300">
+              Each batch undergoes lab checks for key parameters, with additional in-process sampling to maintain consistency across shipments.
+            </p>
+          </details>
+
+          <details class="glass-card rounded-2xl p-4">
+            <summary class="cursor-pointer text-sm font-semibold text-slate-100">
+              What are typical delivery timelines?
+            </summary>
+            <p class="mt-2 text-sm text-slate-300">
+              Delivery timelines are planned against your call-offs and contracts, with buffer capacity to handle surge requirements where possible.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="reveal border-t border-slate-800/70 py-14">
+      <div class="grid gap-8 md:grid-cols-[1.1fr,1.1fr]">
+        <div>
+          <h2 class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
+            Contact Us
+          </h2>
+          <p class="mt-3 text-2xl font-semibold text-slate-50">
+            Share your sand requirements and casting details.
+          </p>
+          <p class="mt-3 text-sm text-slate-300">
+            Company Name: Precision Sand (Example Pvt. Ltd.)<br />
+            Plant Address: [Plant address here]<br />
+            Phone: [+91-XXXXXXXXXX]<br />
+            Email: [sales@precisionsand.in]<br />
+            Website: www.precisionsand.in
+          </p>
+          <p class="mt-3 text-xs text-slate-400">
+            Replace these placeholders with your actual company details and add Google Maps or WhatsApp quick links if required.
+          </p>
+        </div>
+
+        <div class="glass-card rounded-3xl p-5">
+          <h3 class="text-sm font-semibold text-slate-100">
+            Inquiry Form
+          </h3>
+          <form class="mt-4 space-y-3">
+            <div>
+              <label class="block text-xs font-medium uppercase tracking-[0.18em] text-slate-400">
+                Name
+              </label>
+              <input type="text" class="mt-1 w-full rounded-xl border border-slate-700/80 bg-slate-950/40 px-3 py-2 text-sm text-slate-100 outline-none ring-0 focus:border-accent focus:ring-1 focus:ring-accent/70" />
+            </div>
+            <div>
+              <label class="block text-xs font-medium uppercase tracking-[0.18em] text-slate-400">
+                Company
+              </label>
+              <input type="text" class="mt-1 w-full rounded-xl border border-slate-700/80 bg-slate-950/40 px-3 py-2 text-sm text-slate-100 outline-none focus:border-accent focus:ring-1 focus:ring-accent/70" />
+            </div>
+            <div class="grid gap-3 md:grid-cols-2">
+              <div>
+                <label class="block text-xs font-medium uppercase tracking-[0.18em] text-slate-400">
+                  Email
+                </label>
+                <input type="email" class="mt-1 w-full rounded-xl border border-slate-700/80 bg-slate-950/40 px-3 py-2 text-sm text-slate-100 outline-none focus:border-accent focus:ring-1 focus:ring-accent/70" />
+              </div>
+              <div>
+                <label class="block text-xs font-medium uppercase tracking-[0.18em] text-slate-400">
+                  Phone
+                </label>
+                <input type="tel" class="mt-1 w-full rounded-xl border border-slate-700/80 bg-slate-950/40 px-3 py-2 text-sm text-slate-100 outline-none focus:border-accent focus:ring-1 focus:ring-accent/70" />
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-medium uppercase tracking-[0.18em] text-slate-400">
+                Requirement Details
+              </label>
+              <textarea rows="4" class="mt-1 w-full rounded-xl border border-slate-700/80 bg-slate-950/40 px-3 py-2 text-sm text-slate-100 outline-none focus:border-accent focus:ring-1 focus:ring-accent/70" placeholder="AFS range, annual volume, current issues, delivery location, etc."></textarea>
+            </div>
+            <button type="submit" class="mt-2 inline-flex w-full items-center justify-center rounded-full bg-accent px-4 py-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-slate-950 shadow-lg shadow-sky-500/40 transition hover:bg-accentSoft">
+              Submit Inquiry
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="border-t border-slate-800/70 py-6 text-center text-[11px] text-slate-500">
+      © <span id="year"></span> Precision Sand. All rights reserved.
+    </footer>
+  </main>
+
+  <script>
+    // Auto year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple scroll reveal logic
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    document.querySelectorAll('.reveal').forEach((el, idx) => {
+      el.style.transitionDelay = (idx * 60) + 'ms';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

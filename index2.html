@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precision Sand Co. | Industrial Silica Solutions</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#C59D5F', // Sand color
+                            dark: '#1F2937', // Industrial dark
+                            light: '#F3F4F6',
+                            accent: '#D97706'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Oswald', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Styles for aesthetic details */
+        .hero-bg {
+            background-image: linear-gradient(rgba(31, 41, 55, 0.75), rgba(31, 41, 55, 0.75)), url('https://images.unsplash.com/photo-1518390757754-52d9a92f025f?q=80&w=2070&auto=format&fit=crop'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .process-step::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background-color: #C59D5F;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+            z-index: -1;
+        }
+        
+        @media (max-width: 768px) {
+            .process-step::after {
+                left: 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 bg-gray-50 antialiased">
+
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="font-heading text-3xl font-bold text-brand-dark tracking-wide">SAND<span class="text-brand-gold">TECH</span></span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-gray-600 hover:text-brand-gold font-medium transition">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-brand-gold font-medium transition">About</a>
+                    <a href="#products" class="text-gray-600 hover:text-brand-gold font-medium transition">Products</a>
+                    <a href="#process" class="text-gray-600 hover:text-brand-gold font-medium transition">Process</a>
+                    <a href="#contact" class="px-5 py-2.5 bg-brand-gold text-white font-semibold rounded-lg shadow hover:bg-yellow-700 transition">Get Quote</a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="#home" class="block py-3 px-4 text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="#about" class="block py-3 px-4 text-gray-700 hover:bg-gray-100">About</a>
+            <a href="#products" class="block py-3 px-4 text-gray-700 hover:bg-gray-100">Products</a>
+            <a href="#contact" class="block py-3 px-4 bg-brand-gold text-white">Contact Us</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-bg h-screen flex items-center justify-center relative">
+        <div class="text-center px-4 max-w-4xl mx-auto fade-in">
+            <h1 class="font-heading text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                Precision Sand for <br><span class="text-brand-gold">Precision Casting</span>
+            </h1>
+            <p class="text-xl text-gray-200 mb-10 max-w-2xl mx-auto">
+                High-quality washed silica sand engineered for leading foundries & OEMs. Consistent AFS grades, advanced technology, and reliable supply.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#products" class="px-8 py-4 bg-brand-gold text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-yellow-600 transition transform hover:-translate-y-1">
+                    Explore Products
+                </a>
+                <a href="#contact" class="px-8 py-4 bg-transparent border-2 border-white text-white text-lg font-semibold rounded-lg hover:bg-white hover:text-brand-dark transition transform hover:-translate-y-1">
+                    Contact Us
+                </a>
+            </div>
+            
+            <div class="mt-16 flex flex-wrap justify-center gap-8 opacity-80">
+                <div class="flex items-center gap-2 text-white"><i class="fas fa-industry text-brand-gold"></i> Trusted by OEMs</div>
+                <div class="flex items-center gap-2 text-white"><i class="fas fa-check-circle text-brand-gold"></i> AFS Certified</div>
+                <div class="flex items-center gap-2 text-white"><i class="fas fa-water text-brand-gold"></i> Advanced Washing</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-white -mt-10 relative z-10 max-w-7xl mx-auto px-4 sm:px-6 rounded-t-xl shadow-xl">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-gray-200">
+            <div class="p-4 fade-in">
+                <i class="fas fa-layer-group text-4xl text-brand-gold mb-4"></i>
+                <h3 class="font-bold text-lg text-gray-900">Complete AFS Range</h3>
+                <p class="text-sm text-gray-500 mt-2">Tailored grain sizes for every need.</p>
+            </div>
+            <div class="p-4 fade-in">
+                <i class="fas fa-cogs text-4xl text-brand-gold mb-4"></i>
+                <h3 class="font-bold text-lg text-gray-900">Advanced Tech</h3>
+                <p class="text-sm text-gray-500 mt-2">Fluidizer separation & precision washing.</p>
+            </div>
+            <div class="p-4 fade-in">
+                <i class="fas fa-handshake text-4xl text-brand-gold mb-4"></i>
+                <h3 class="font-bold text-lg text-gray-900">OEM Trusted</h3>
+                <p class="text-sm text-gray-500 mt-2">Partner to Ashok Leyland & Nelcast.</p>
+            </div>
+            <div class="p-4 fade-in">
+                <i class="fas fa-truck-loading text-4xl text-brand-gold mb-4"></i>
+                <h3 class="font-bold text-lg text-gray-900">Consistent Supply</h3>
+                <p class="text-sm text-gray-500 mt-2">Bulk & Bagged options on time.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <h4 class="text-brand-gold font-bold uppercase tracking-wider mb-2">About Our Company</h4>
+                    <h2 class="text-4xl font-heading font-bold text-gray-900 mb-6">Decades of Expertise in Industrial Sand</h2>
+                    <p class="text-gray-600 mb-4 text-lg">
+                        We are a premier supplier of industry-grade silica sand, trusted by major foundries and OEMs across the region. With years of expertise, we understand that quality casting begins with quality sand.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        Our mission is to provide consistent, high-purity sand through ethical manufacturing and long-term partnerships. We leverage advanced washing technology to ensure our product meets the rigorous demands of modern engineering.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center"><i class="fas fa-check text-brand-gold mr-3"></i> Strict adherence to manufacturing ethics</li>
+                        <li class="flex items-center"><i class="fas fa-check text-brand-gold mr-3"></i> Advanced fluidizer technology</li>
+                        <li class="flex items-center"><i class="fas fa-check text-brand-gold mr-3"></i> Dedicated Quality Assurance Lab</li>
+                    </ul>
+                </div>
+                <div class="relative fade-in">
+                    <img src="https://images.unsplash.com/photo-1595844917469-8321cb12165f?q=80&w=1000&auto=format&fit=crop" alt="Sand Pile" class="rounded-lg shadow-2xl">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-xl border-l-4 border-brand-gold hidden md:block">
+                        <p class="text-4xl font-bold text-brand-dark">20+</p>
+                        <p class="text-gray-600">Years of Excellence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-heading font-bold text-gray-900">Our Products & Services</h2>
+                <p class="text-gray-600 mt-4">Engineered for perfection, delivered with reliability.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 group fade-in">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1621260650965-74591459a977?q=80&w=800&auto=format&fit=crop" alt="Silica Sand" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Washed Silica Sand</h3>
+                        <p class="text-gray-600 mb-4">High purity sand with uniform grain size and controlled moisture. The ideal choice for precision casting and foundries.</p>
+                        <ul class="text-sm text-gray-500 space-y-2 mb-6">
+                            <li>• Clay & Impurity Free</li>
+                            <li>• High Sintering Point</li>
+                            <li>• Controlled Moisture</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 group fade-in">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://plus.unsplash.com/premium_photo-1661962360699-14a067d58300?q=80&w=800&auto=format&fit=crop" alt="Lab Testing" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Custom Sand Grades</h3>
+                        <p class="text-gray-600 mb-4">Tailored solutions based on AFS specifications. We customize the grain distribution to match your specific casting requirements.</p>
+                        <ul class="text-sm text-gray-500 space-y-2 mb-6">
+                            <li>• Custom AFS Grading</li>
+                            <li>• Bulk & Bagged Supply</li>
+                            <li>• Batch-wise consistency</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 group fade-in">
+                    <div class="h-48 overflow-hidden bg-brand-dark flex items-center justify-center">
+                        <i class="fas fa-headset text-6xl text-brand-gold"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Technical Support</h3>
+                        <p class="text-gray-600 mb-4">We don't just sell sand; we offer solutions. Our team assists with foundry sand selection and logistics planning.</p>
+                        <ul class="text-sm text-gray-500 space-y-2 mb-6">
+                            <li>• Foundry Selection Support</li>
+                            <li>• Contract-based Supply</li>
+                            <li>• Logistics Management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="py-20 bg-brand-dark text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png');"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-heading font-bold text-white">Our Technology & Process</h2>
+                <p class="text-gray-400 mt-4">From mine to mould – a rigorous purification process.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 fade-in">
+                    <div class="text-brand-gold text-5xl font-heading font-bold mb-4">01</div>
+                    <h3 class="text-xl font-bold mb-2">Raw Sand Sourcing</h3>
+                    <p class="text-gray-400">Sourcing raw material from high-quality mines ensuring base purity.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 fade-in">
+                    <div class="text-brand-gold text-5xl font-heading font-bold mb-4">02</div>
+                    <h3 class="text-xl font-bold mb-2">Washing & Scrubbing</h3>
+                    <p class="text-gray-400">Intensive scrubbing to remove clay content and surface impurities.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 fade-in">
+                    <div class="text-brand-gold text-5xl font-heading font-bold mb-4">03</div>
+                    <h3 class="text-xl font-bold mb-2">Fluidizer Separation</h3>
+                    <p class="text-gray-400">Advanced air/water separation to remove dust and micro-impurities.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 fade-in">
+                    <div class="text-brand-gold text-5xl font-heading font-bold mb-4">04</div>
+                    <h3 class="text-xl font-bold mb-2">Classification</h3>
+                    <p class="text-gray-400">Precision screening to achieve accurate AFS grading requirements.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 fade-in">
+                    <div class="text-brand-gold text-5xl font-heading font-bold mb-4">05</div>
+                    <h3 class="text-xl font-bold mb-2">Lab Verification</h3>
+                    <p class="text-gray-400">Sieve analysis, moisture testing, and clay checks before dispatch.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 fade-in">
+                    <div class="text-brand-gold text-5xl font-heading font-bold mb-4">06</div>
+                    <h3 class="text-xl font-bold mb-2">Dispatch</h3>
+                    <p class="text-gray-400">Packaging in bulk or bags and on-time delivery to your plant.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-20 fade-in">
+                <h2 class="text-3xl font-heading font-bold text-center text-gray-900 mb-10">Awards & Recognition</h2>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-brand-gold w-full md:w-1/3 text-center">
+                        <i class="fas fa-trophy text-4xl text-brand-gold mb-4"></i>
+                        <h3 class="font-bold text-lg mb-2">Ashok Leyland</h3>
+                        <p class="text-sm text-gray-600">Gold Award: Best Performance in Business Alignment</p>
+                        <span class="inline-block mt-3 px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-bold rounded-full">75 Years Milestone</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-brand-gold w-full md:w-1/3 text-center">
+                        <i class="fas fa-medal text-4xl text-brand-gold mb-4"></i>
+                        <h3 class="font-bold text-lg mb-2">Nelcast Limited</h3>
+                        <p class="text-sm text-gray-600">Supplier Excellence Recognition</p>
+                        <span class="inline-block mt-3 px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-bold rounded-full">40 Years Milestone</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center fade-in">
+                <h2 class="text-3xl font-heading font-bold text-gray-900 mb-10">Major Clients</h2>
+                <div class="flex flex-wrap justify-center gap-8 md:gap-16 items-center opacity-70 grayscale hover:grayscale-0 transition duration-500">
+                    <h3 class="text-2xl font-bold text-gray-800">ASHOK LEYLAND</h3>
+                    <h3 class="text-2xl font-bold text-gray-800">NELCAST</h3>
+                    <h3 class="text-2xl font-bold text-gray-800">BRAKES INDIA</h3>
+                    <h3 class="text-2xl font-bold text-gray-800">DONN BRAKE</h3>
+                </div>
+            </div>
+
+            <div class="mt-16 bg-brand-dark rounded-2xl p-8 md:p-12 text-center text-white max-w-4xl mx-auto fade-in">
+                <i class="fas fa-quote-left text-4xl text-brand-gold mb-4 opacity-50"></i>
+                <p class="text-xl md:text-2xl italic font-light mb-6">"Reliable supplier with consistent quality sand. Their commitment to specifications has helped us maintain our casting standards."</p>
+                <cite class="font-bold text-brand-gold not-italic">– Nelcast Limited</cite>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
+            <h2 class="text-3xl font-heading font-bold text-gray-900 mb-10">Industries Served</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="px-6 py-3 bg-gray-100 rounded-full text-gray-700 font-medium hover:bg-brand-gold hover:text-white transition cursor-default">Automotive Foundries</span>
+                <span class="px-6 py-3 bg-gray-100 rounded-full text-gray-700 font-medium hover:bg-brand-gold hover:text-white transition cursor-default">Casting Components</span>
+                <span class="px-6 py-3 bg-gray-100 rounded-full text-gray-700 font-medium hover:bg-brand-gold hover:text-white transition cursor-default">Glass & Ceramics</span>
+                <span class="px-6 py-3 bg-gray-100 rounded-full text-gray-700 font-medium hover:bg-brand-gold hover:text-white transition cursor-default">Construction Materials</span>
+                <span class="px-6 py-3 bg-gray-100 rounded-full text-gray-700 font-medium hover:bg-brand-gold hover:text-white transition cursor-default">Industrial Manufacturing</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <div class="fade-in">
+                    <h2 class="text-3xl font-heading font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
+                    <div class="space-y-4">
+                        <details class="group bg-white p-4 rounded-lg shadow-sm">
+                            <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                                <span>What AFS ranges do you supply?</span>
+                                <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down text-brand-gold"></i></span>
+                            </summary>
+                            <div class="text-gray-600 mt-3 text-sm">
+                                We supply a complete range of AFS grades tailored to foundry requirements. Contact us for specific technical data sheets.
+                            </div>
+                        </details>
+                        <details class="group bg-white p-4 rounded-lg shadow-sm">
+                            <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                                <span>Do you offer customized sand grades?</span>
+                                <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down text-brand-gold"></i></span>
+                            </summary>
+                            <div class="text-gray-600 mt-3 text-sm">
+                                Yes, our advanced classification technology allows us to create custom blends to match your exact casting specifications.
+                            </div>
+                        </details>
+                        <details class="group bg-white p-4 rounded-lg shadow-sm">
+                            <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                                <span>How do you ensure quality?</span>
+                                <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down text-brand-gold"></i></span>
+                            </summary>
+                            <div class="text-gray-600 mt-3 text-sm">
+                                We perform rigorous lab testing on every batch, including sieve analysis, moisture testing, and clay impurity checks.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg fade-in">
+                    <h2 class="text-3xl font-heading font-bold text-gray-900 mb-6">Get a Quote</h2>
+                    <form class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-brand-gold focus:outline-none transition">
+                            <input type="text" placeholder="Company Name" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-brand-gold focus:outline-none transition">
+                        </div>
+                        <input type="email" placeholder="Email Address" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-brand-gold focus:outline-none transition">
+                        <select class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-brand-gold focus:outline-none transition text-gray-500">
+                            <option>Select Requirement</option>
+                            <option>Bulk Sand Supply</option>
+                            <option>Sample Request</option>
+                            <option>Technical Consultation</option>
+                        </select>
+                        <textarea rows="4" placeholder="Message / Specific Requirements" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-brand-gold focus:outline-none transition"></textarea>
+                        <button type="submit" class="w-full bg-brand-gold text-white font-bold py-3 rounded-lg hover:bg-yellow-700 transition">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-dark text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="col-span-1 md:col-span-2">
+                <span class="font-heading text-2xl font-bold text-white tracking-wide">SAND<span class="text-brand-gold">TECH</span></span>
+                <p class="mt-4 max-w-sm">Premium silica sand solutions for the modern industry. Trusted by leaders, driven by quality.</p>
+                <div class="flex space-x-4 mt-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook text-xl"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#home" class="hover:text-brand-gold transition">Home</a></li>
+                    <li><a href="#about" class="hover:text-brand-gold transition">About Us</a></li>
+                    <li><a href="#products" class="hover:text-brand-gold transition">Products</a></li>
+                    <li><a href="#process" class="hover:text-brand-gold transition">Technology</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Contact Info</h4>
+                <ul class="space-y-3">
+                    <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3 text-brand-gold"></i><span>123 Industrial Estate,<br>Plant Address Line 2,<br>City, Zip Code</span></li>
+                    <li class="flex items-center"><i class="fas fa-phone mr-3 text-brand-gold"></i><span>+91 98765 43210</span></li>
+                    <li class="flex items-center"><i class="fas fa-envelope mr-3 text-brand-gold"></i><span>sales@sandtech.com</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-800 text-sm text-center">
+            &copy; 2023 SandTech Company. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Simple Fade In on Scroll Observer
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); // Only animate once
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach((element) => {
+            observer.observe(element);
+        });
+    </script>
+</body>
+</html>
